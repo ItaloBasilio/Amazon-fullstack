@@ -1,6 +1,6 @@
 # Installation Steps
 
-<img src = "" alt="">
+<img src = "https://github.com/ItaloBasilio/Amazon-fullstack/blob/master/src/Assets/Amazon.png?raw=true" alt="">
 
 
 
