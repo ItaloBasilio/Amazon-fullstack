@@ -5,13 +5,17 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Amazon 2.0</title>
+        <title>Amazon Project</title>
       </Head>
 
-      {/* Header */}
       <Header />
      
-    
+      <main className="max-w-screen-xl mx-auto">
+        {/* Banner */}
+      <Banner />
+
+        {/* Product feed */}
+      </main>
 
 
     </div>
