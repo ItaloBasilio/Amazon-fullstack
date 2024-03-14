@@ -17,7 +17,9 @@ function Product({ id, title, price, description, category, image }) {
     <div className="relative flex flex-col m-5 bg-white z-30 p-10">
       <p className="absolute top-2 right-2 text-xs italic text-gray-400">{category}</p>
 
-      <Image src={image} height={200} width={200} objectFit="contain" />
+      <div className="flex justify-center"> {/* Centralizar a imagem */}
+        <Image src={image} height={200} width={200} objectFit="contain" />
+      </div>
 
       <h4>{title}</h4>
 
@@ -31,18 +33,18 @@ function Product({ id, title, price, description, category, image }) {
 
       <p className="text-xs my-2 line-clamp-2">{description}</p>
 
-      <div>
+      <div className="mb-5">
         <Currency quantity={price} currency="USD" />
       </div>
 
       {hasPrime && (
-        <div>
-            <img src="https://m.media-amazon.com/images/G/01/support_images/GUID-A5E374A8-16DA-4B39-8E3F-3F3B34E831FB=2=pt-BR=Normal.png" width={150} alt="" />
-            <p>FREE Next-day Delivery</p>
+        <div className="flex items-center space-x-2 mt-5">
+            <img className="" src="https://logodownload.org/wp-content/uploads/2019/10/amazon-prime-logo-0.png" width={90} alt="" />
+            <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
         </div>
       )}
 
-      <button>Add to Basket</button>
+      <button className="mt-auto button">Add to Basket</button>
     </div>
   );
 }
