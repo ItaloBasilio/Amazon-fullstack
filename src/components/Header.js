@@ -1,9 +1,12 @@
-import Image from "next/image";
 import {
   MenuIcon,
   SearchIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
+import Image from "next/image";
+
+
+
 
 
 function Header() {
@@ -29,8 +32,8 @@ function Header() {
 
         {/* Right */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-          <div className="link">
-            <p>Hello, Italo Basilio</p>
+          <div className="cursor-pointer link">
+            <p className="hover:underline">Hello, Italo Basilio</p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
 

@@ -40,7 +40,8 @@ function Product({ id, title, price, description, category, image }) {
 
       {hasPrime && (
         <div className="flex items-center space-x-2 mt-5">
-            <img className="" src="https://logodownload.org/wp-content/uploads/2019/10/amazon-prime-logo-0.png" width={90} alt="" />
+            <Image 
+            className="" src="https://logodownload.org/wp-content/uploads/2019/10/amazon-prime-logo-0.png" width={90} height={90} alt="" />
             <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
         </div>
       )}
