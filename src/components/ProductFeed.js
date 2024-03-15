@@ -51,6 +51,7 @@ function ProductFeed({products}) {
             category={category}
             image={image}
           />
+          
         ))}
 
     </div>
