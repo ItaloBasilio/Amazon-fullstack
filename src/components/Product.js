@@ -22,6 +22,7 @@ function Product({ id, title, price, description, category, image }) {
       </div>
 
       <h4>{title}</h4>
+      
 
       <div className="flex">
         {Array(rating)
